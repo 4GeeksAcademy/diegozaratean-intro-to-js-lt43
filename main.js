@@ -1,65 +1,98 @@
 console.log("hola des main.js")
 
-let nombre = 'diego'
-
-// console.log('QUEMADO')
-// console.log(1)
-// console.log(2)
-// console.log(3)
-// console.log(4)
-// console.log(5)
-
-console.log('con el FOR')
-// for(inicialización;condicion;actualizacion
-// cuantas veces tengo que ejecutarlo 5 verces
-// de cada cuanto o cauntos son los saltos. 1 en 1
-// cual es el valor inicial. 1
-
-//. i = 1 ==> 1
-//. i = 2 ==> 2
-//. i = 3 ==> 4
-//. i = 4 ==> 4
-//. i = 5 ==> 5
-//. i = 6 
-// for(i=1; i  <= 50  ; i++){
-//     console.log(i)
-// } 
 
 
-// for(i=20; i >= 15;i--){
-//     console.log(i)
+// let nombre = 'Diego'
+// console.log('Antes de la funcion ',nombre)
+// function saludarEstudiante(nombre){
+//     let numero = 6
+//     console.log('numero',numero)
+//     console.log('Dentro de la funcion ',nombre)
+//     console.log('Hola ' + nombre)
 // }
-// console.log('con el FOR. de 30 a 50')
-// for(i = 30 ; i <= 50 ; i = i + 5){
-//     console.log(i)
+// console.log('Despues de la funcion ',nombre)
+// saludarEstudiante('Oscar')
+// console.log('numero',numero)
+// saludarEstudiante('Matias')
+// saludarEstudiante('Saray')
+
+
+
+// function transportar(origen,destino){
+//     console.log('Saliendo de '+origen)
+//     console.log('desplazandome')
+//     console.log('llegando a '+destino)
 // }
 
-// let nombres = ['diego','johana','santiago']
-// console.log(nombres)
-// nombres.push('luis')
-// console.log(nombres)
-
-// const alumnos = ['adler','alejandro','christian']
-// console.log(alumnos)
-// alumnos.push('eduardo')
-// console.log(alumnos)
-
-const frutas = ['pera','platano','manzana']
-console.log(frutas)
-console.log(frutas.length)
+// transportar('casa','gym')
+// transportar('gym','oficina')
+// transportar('oficina','casa')
+// // transportar()
 
 
-for(i= 0 ; i < frutas.length; i++){
-    console.log(frutas[i] + 's')
+// function suma(num1,num2){
+//     return num1 + num2
+// }
+
+
+// console.log('resultado',suma(2,2)) // 4
+// console.log('resultado',suma(1,5)) // 6
+// console.log('resultado',suma(8,0)) // 8
+// console.log('resultado',suma(7,2)) // 9
+
+// // realiar funcion admitido  que si soy mayor de 18 me dia 'Puedes entrar' , si no me diga "Debes esperar"
+// function admitido(edad){
+//     if(edad >= 18){
+//         return 'Puedes entrar'
+//     }else{
+//         return 'Debes esperar'
+//         console.log('CABRITAS')
+//     }
+// }
+
+// console.log(admitido(21))
+
+
+// realizar una funcion que cacule el impuestyo d eun gtrabajador unieprsonal 7%
+// function calculoImpuesto(salario){
+//     console.log('Debes pagar ' + salario * 0.07)
+//     return salario * 0.07
+// }
+
+// // calculoImpuesto(10000)
+
+// document.getElementById('impuesto').innerText = calculoImpuesto(10000)
+
+// console.log('Antes del windowOnload')
+// window.onload = function(){
+//     // you code goes here
+//     console.log('Dentro del windowOnload')
+// }
+// console.log('Despues del windowOnload')
+
+// funcion declarativa
+saludoDeclartivo()
+function saludoDeclartivo(){
+    console.log('saludoDeclartivo')
 }
 
+// funcion de expresión
+const saludoExpresion = function (){
+    console.log('saludoExpresion')
+}
+saludoExpresion()
 
-// num = num + 5 ======== num+=5
+// funcion flecha / arrow
+const saludoFlecha =  ()=> {
+    console.log('saludoFlecha')
+}
+saludoFlecha()
 
-
-
-
-
-
-
-
+// PSEUDOCODIGO
+// desarrollar un generad de excusas de Quien, Accion,Cuando  y Que
+// 1. modificar el html desde el js, mandar la escusa al html
+// 2. defnir listas de Quien, Accion,Cuando  y Que
+// 3. tomar un array de Quien y seleccionar un elemento aleatorio del array
+// 4. tomar un array de Accion y seleccionar un elemento aleatorio del array
+// 5. tomar un array de Cuando y seleccionar un elemento aleatorio del array
+// 6. tomar un array de Que y seleccionar un elemento aleatorio del array
