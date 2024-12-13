@@ -1,98 +1,102 @@
 console.log("hola des main.js")
 
+let gameNames = ['Mario','Luigi','Bowser','Toad','Peach']
+
+// console.log(gameNames[0])
+// console.log(gameNames[1])
+// console.log(gameNames[2])
+// console.log(gameNames[3])
+// console.log(gameNames[4])
+
+//for(inicialización;condciion;actualización)
+// i = 4 ===> Peach
+// i = 3 ===> Toad
+// i = 2 ===> 2
+// i = 1 ===> 3
+// i = 0 ===> Mario
 
 
-// let nombre = 'Diego'
-// console.log('Antes de la funcion ',nombre)
-// function saludarEstudiante(nombre){
-//     let numero = 6
-//     console.log('numero',numero)
-//     console.log('Dentro de la funcion ',nombre)
-//     console.log('Hola ' + nombre)
-// }
-// console.log('Despues de la funcion ',nombre)
-// saludarEstudiante('Oscar')
-// console.log('numero',numero)
-// saludarEstudiante('Matias')
-// saludarEstudiante('Saray')
-
-
-
-// function transportar(origen,destino){
-//     console.log('Saliendo de '+origen)
-//     console.log('desplazandome')
-//     console.log('llegando a '+destino)
-// }
-
-// transportar('casa','gym')
-// transportar('gym','oficina')
-// transportar('oficina','casa')
-// // transportar()
-
-
-// function suma(num1,num2){
-//     return num1 + num2
-// }
-
-
-// console.log('resultado',suma(2,2)) // 4
-// console.log('resultado',suma(1,5)) // 6
-// console.log('resultado',suma(8,0)) // 8
-// console.log('resultado',suma(7,2)) // 9
-
-// // realiar funcion admitido  que si soy mayor de 18 me dia 'Puedes entrar' , si no me diga "Debes esperar"
-// function admitido(edad){
-//     if(edad >= 18){
-//         return 'Puedes entrar'
-//     }else{
-//         return 'Debes esperar'
-//         console.log('CABRITAS')
-//     }
-// }
-
-// console.log(admitido(21))
-
-
-// realizar una funcion que cacule el impuestyo d eun gtrabajador unieprsonal 7%
-// function calculoImpuesto(salario){
-//     console.log('Debes pagar ' + salario * 0.07)
-//     return salario * 0.07
-// }
-
-// // calculoImpuesto(10000)
-
-// document.getElementById('impuesto').innerText = calculoImpuesto(10000)
-
-// console.log('Antes del windowOnload')
-// window.onload = function(){
-//     // you code goes here
-//     console.log('Dentro del windowOnload')
-// }
-// console.log('Despues del windowOnload')
-
-// funcion declarativa
-saludoDeclartivo()
-function saludoDeclartivo(){
-    console.log('saludoDeclartivo')
+// i = i + 1 ====> i++
+for(i = gameNames.length -1; i >= 0  ;i--){
+    console.log(gameNames[i])
 }
 
-// funcion de expresión
-const saludoExpresion = function (){
-    console.log('saludoExpresion')
-}
-saludoExpresion()
 
-// funcion flecha / arrow
-const saludoFlecha =  ()=> {
-    console.log('saludoFlecha')
-}
-saludoFlecha()
 
-// PSEUDOCODIGO
-// desarrollar un generad de excusas de Quien, Accion,Cuando  y Que
-// 1. modificar el html desde el js, mandar la escusa al html
-// 2. defnir listas de Quien, Accion,Cuando  y Que
-// 3. tomar un array de Quien y seleccionar un elemento aleatorio del array
-// 4. tomar un array de Accion y seleccionar un elemento aleatorio del array
-// 5. tomar un array de Cuando y seleccionar un elemento aleatorio del array
-// 6. tomar un array de Que y seleccionar un elemento aleatorio del array
+
+
+
+
+let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+console.log(numbers)
+
+
+// i = 0  ==> 1
+// i = 3  ==> 4
+// i = 6  ==> 7
+// i = 9  ==> 10
+// i = 12  ==> 13
+// i = 15  ==> 16
+// i = 18  ==> 19
+// i = 21  ==> 19
+
+// i = i + 1 ====> i++
+// i = i + 3 ====> i+=3
+for(i=0; i < numbers.length; i+=3){
+    console.log(numbers[i])
+}
+
+
+let goodGameNames = []
+
+// por todos los elementos del array
+
+console.log(gameNames)
+
+// impimrir todos los elementos del array gameNames
+for(i=0; i < gameNames.length ; i = i +1){
+    if( gameNames[i] != 'Bowser' ){
+        goodGameNames.push(gameNames[i])
+    }
+}
+
+
+console.log("goodGameNames",goodGameNames)
+
+console.log( gameNames.filter( (name)=> name != 'Bowser' ) )
+
+console.log( numbers.filter( (number)=> number > 7 ) )
+console.log( numbers.filter( (number)=> number != 7 ) )
+
+console.log( numbers.filter( (number)=> number %3 == 0 ) )
+
+console.log( numbers.filter( (number)=> number > 7 ) )
+console.log( numbers.filter( (number)=> number < 15 ) )
+
+console.log( numbers.filter( (number)=> number > 7 && number < 15 ) )
+console.log(numbers)
+
+let newNumbers = []
+for(i=0;i < numbers.length;i++){
+    console.log(numbers[i] * 4)
+    newNumbers.push(numbers[i] * 4)
+}
+console.log("newNumbers",newNumbers)
+
+// let mapNumbers = numbers.map( (x)=> x * 4 )
+console.log(numbers.map( (number)=> number * 4 ))
+console.log(numbers)
+
+console.log( gameNames.map( (name)=> name + 's' ) )
+
+
+gameNames.forEach( (item)=>{
+    console.log(item)
+})
+
+console.log('Do while')
+let j = 20
+do{
+    console.log(j)
+    j++
+}while( j < 10)
