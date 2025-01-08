@@ -9,6 +9,8 @@
             border: 1px solid #000;
             width: 100px;
             height: 100px;
+            min-width: 100px;
+            min-height: 100px;
             display: block;
             font-size: 60px;
             text-align: center;
@@ -38,6 +40,13 @@
         <p>Dado 1: <span class="dado" id="dado1">0</span> </p>
         <p>Dado 2: <span class="dado" id="dado2">0</span> </p>
         <button onclick="lanzarDados()">Lanzar</button>
+
+        <br><br><br>
+        <label for="height">Alto:</label>
+        <input type="number" name="height" id="height" placeholder="ingresa alto">
+        <label for="width">Ancho:</label>
+        <input type="number" name="width" id="width"  placeholder="ingresa ancho">
+        <button id="btn-mezclador" onclick="console.log('on clickl')">Redimensionar dados</button>
 
     </div>
 

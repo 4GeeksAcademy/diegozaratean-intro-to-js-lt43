@@ -52,5 +52,37 @@ function lanzarDados(){
 
 
 
+// PSEUDOCODIGO
+// DONE: agregar boton al html
+// DONE:crear funcion
+function redimensionarDados(){
+  console.log('redimensionarDados')
+  // obtener el valor de alto y ancho del html en js
+  console.log(document.getElementById('height').value )
+  console.log(document.getElementById('width').value )
+  // DONE:cambiar el alto a dado 1 y dado 2
+  document.querySelector('#dado1').style.height = document.getElementById('height').value + 'px' 
+  document.querySelector('#dado2').style.height = document.getElementById('height').value + 'px' 
+  // DONE:cambiar el ancho a dado 1 y dado 2
+  document.querySelector('#dado1').style.width = document.getElementById('width').value + 'px' 
+  document.querySelector('#dado2').style.width = document.getElementById('width').value + 'px' 
+}
+// redimensionarDados()
+// DONE: agregar input de alto y ancho al html
+// DONE:cuando le de click al boton ejecutar una funcion
+document.getElementById('btn-mezclador').addEventListener("click", function() {
+  console.log('con evente listener')
+  redimensionarDados()
+}); 
+//elemenot.addEventListener(que debe observar, que hago cuando eso pase)
 
 
+
+
+Math.random()
+
+setInterval(lanzarDados, 3000);
+
+// function myCallback() {
+//   lanzarDados()
+// }
